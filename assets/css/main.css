@@ -1,3 +1,19 @@
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Fira Sans Italic"), local("FiraSans-Italic"), url(https://fonts.gstatic.com/s/firasans/v6/QURAmFz4b80g324-oF-Uj4gp9Q8gbYrhqGlRav_IXfk.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Sans"), local("FiraSans-Regular"), url(https://fonts.gstatic.com/s/firasans/v6/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -447,7 +463,7 @@ body {
   background: #f6f6f8;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Fira Sans' sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -598,6 +614,31 @@ body {
         -ms-transform: translateY(0%);
             transform: translateY(0%); } }
 
+section.about {
+  background: red;
+    background-image: url(../img/hero.png);
+    background-position: center bottom;
+    background-size: cover; }
+  section.about h2 {
+    color: #3f3f42;
+    font-size: 60px;
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    line-height: 1;
+    margin-left: -108px;
+    margin-top: 0; }
+  section.about .home-lead {
+    padding-bottom: 180px; }
+
+@media (max-width: 640px) {
+  section.about h2, section.about .home-lead {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; } }
+
+section.youtube {
+  background: blue; }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -642,17 +683,17 @@ body {
 
 .col-1 {
   max-width: 300px;
-  margin: 0 10px;
-  background: pink; }
+  margin: 0 10px; }
 
 .col-2 {
   max-width: 620px;
-  margin: 0 10px;
-  background: honeydew; }
+  margin: 0 10px; }
 
 .col-50 {
-  width: 50%;
-  background: yellow; }
+  width: 50%; }
+
+.push-right {
+  margin-left: 330px; }
 
 @media (max-width: 640px) {
   .home-sections .flex {
@@ -660,4 +701,10 @@ body {
   .col-1 {
     max-width: 100%; }
   .col-50 {
-    width: auto; } }
+    width: auto; }
+  .push-right {
+    margin-left: 20px; } }
+
+.home-lead {
+  font-size: 36px;
+  line-height: 1.1; }
